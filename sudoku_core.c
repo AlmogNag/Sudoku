@@ -2,7 +2,7 @@
 
 
 
-//ñòéó à/
+//Ã±Ã²Ã©Ã³ Ã /
 Array*** PossibleDigits(short sudokuBoard[][BOARD_SIZE]) {
 
     Array*** res;
@@ -102,7 +102,7 @@ short* cellPossibleDigits(short sudokuBoard[][BOARD_SIZE], short row, short col,
 
 
 
-//ñòéó á//
+//Ã±Ã²Ã©Ã³ Ã¡//
 int OneStage(short board[][9], Array*** possibilities, int* x, int* y) {
 
     int i, j;
@@ -242,7 +242,7 @@ void updatePossibleDigits(Array*** possibilities, short board[][BOARD_SIZE], sho
 
 
 
-// ñòéó â //
+// Ã±Ã²Ã©Ã³ Ã¢ //
 int FillBoard(short board[][BOARD_SIZE], Array*** possibilities) {
     int i;
     Position cell;
@@ -313,7 +313,7 @@ bool checkForEmptyCells(Array*** possibilities, short board[][BOARD_SIZE]) {
 
     for (i = 0; i < BOARD_SIZE; i++) {
         for (j = 0; j < BOARD_SIZE; j++) {
-            // àí äúà øé÷
+            // Ã Ã­ Ã¤ÃºÃ  Ã¸Ã©Ã·
             if (board[i][j] == -1 && possibilities[i][j]->size == 0) {
                 return false;
             }
@@ -539,10 +539,10 @@ void bubbleSort(PLNODE** array, int size) { // sort playerArray from min to max 
 void createRandomBoard(short board[BOARD_SIZE][BOARD_SIZE]) {
 
     int i, j;
-    int k;      // îñôø áéï 1 ìâåãì äøùéîä 
+    int k;      // Ã®Ã±Ã´Ã¸ Ã¡Ã©Ã¯ 1 Ã¬Ã¢Ã¥Ã£Ã¬ Ã¤Ã¸Ã¹Ã©Ã®Ã¤ 
     int index;
     int value; // value on cell
-    int N;    //  îñôø äîùáöåú äîìàåú áúçéìú äîùç÷ 
+    int N;    //  Ã®Ã±Ã´Ã¸ Ã¤Ã®Ã¹Ã¡Ã¶Ã¥Ãº Ã¤Ã®Ã¬Ã Ã¥Ãº Ã¡ÃºÃ§Ã©Ã¬Ãº Ã¤Ã®Ã¹Ã§Ã· 
     int row;
     int col;
     int size = BOARD_SIZE * BOARD_SIZE;
