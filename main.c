@@ -62,7 +62,7 @@
 
 
 
-       // Don't forget to free memory!
+       // Don't forget toÂ freeÂ memory!
 
 }*/
 
@@ -72,15 +72,15 @@ void main() {
     srand(12345);
 
     int i;
-    int x; // numPlayers - îñôø ùç÷ðé ñåãå÷å
+    int x; // numPlayers - Ã®Ã±Ã´Ã¸ Ã¹Ã§Ã·Ã°Ã© Ã±Ã¥Ã£Ã¥Ã·Ã¥
     char name[MAX_LEN_NAME];
     short board[BOARD_SIZE][BOARD_SIZE];
-    PLNODE* newNode; // îùîù ëðåã çãù
+    PLNODE* newNode; // Ã®Ã¹Ã®Ã¹ Ã«Ã°Ã¥Ã£ Ã§Ã£Ã¹
 
-    PLIST activePlayers; // øùéîä ùì ùç÷ðéí ùòãéï áîùç÷
-    PLIST winners; // øùéîä ùì îðöçéí
-    TREE* playerTree = NULL; // òõ ùì ùç÷ðéí
-    PLNODE** playerArray; // îòøê ùì îöáéòéí ìùç÷ðéí ùòãéï áîùç÷
+    PLIST activePlayers; // Ã¸Ã¹Ã©Ã®Ã¤ Ã¹Ã¬ Ã¹Ã§Ã·Ã°Ã©Ã­ Ã¹Ã²Ã£Ã©Ã¯ Ã¡Ã®Ã¹Ã§Ã·
+    PLIST winners; // Ã¸Ã¹Ã©Ã®Ã¤ Ã¹Ã¬ Ã®Ã°Ã¶Ã§Ã©Ã­
+    TREE* playerTree = NULL; // Ã²Ãµ Ã¹Ã¬ Ã¹Ã§Ã·Ã°Ã©Ã­
+    PLNODE** playerArray; // Ã®Ã²Ã¸Ãª Ã¹Ã¬ Ã®Ã¶Ã¡Ã©Ã²Ã©Ã­ Ã¬Ã¹Ã§Ã·Ã°Ã©Ã­ Ã¹Ã²Ã£Ã©Ã¯ Ã¡Ã®Ã¹Ã§Ã·
     FILE* file = fopen("winner_file", "wt"); // winner file
     if (file == NULL) {
         printf("File does not exist\n");
@@ -152,7 +152,7 @@ void main() {
     while (curr != NULL) {
 
         fprintf(file, "%s\n", curr->name);
-        printsudokuBoardToFile(curr, file); // äìåç ùì äùç÷ï  
+        printsudokuBoardToFile(curr, file); // Ã¤Ã¬Ã¥Ã§ Ã¹Ã¬ Ã¤Ã¹Ã§Ã·Ã¯  
         curr = curr->next;
     }
 
